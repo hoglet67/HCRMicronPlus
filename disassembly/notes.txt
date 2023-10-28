@@ -1,0 +1,91 @@
+
+     &00  &01  &02  &03  &04  &05  &06  &07  &08  &09  &0A  &0B  &0C  &0D  &0E  &0F
+
+equb &40, &c4,   1, &20, &60, &fb, &c0, &fb, &ff, &c0, &ff,   4, &7f,   0,   0,   0 ### 27513 (64K)
+equb &40, &c4,   1, &20, &a0, &fb,   0, &fb, &ff, &c0,   1,   1, &7f,   1,   1,   1 ### 27512 (64K)
+equb &40, &e5,   1, &20, &a0, &fb,   0, &fb, &ff, &c0, &ff,   4, &7f,   2,   2,   2 ### 27256 (32K)
+equb &40, &e3,   1, &20, &60, &fb, &c0, &ff, &bf,   3, &fb,   0, &7f,   3,   3,   3 ### 27128 (16K)
+equb &20, &e3,   1, &20, &40, &fb, &c0, &fb, &bf,   4, &fb,   0, &7f,   4,   4,   4 ### 2764 (8K)
+equb &10, &f1,   0, &20, &30,   5,   5,   5,   5,   5,   5,   5,   5,   5,   5,   5 ### 2732 (4K)
+equb   8, &f1,   0, &20, &28,   6,   6,   6,   6,   6,   6,   6,   6,   6,   6,   6 ### 2716 (2K)
+equb &20, &f1,   0, &20, &40,   7,   7,   7,   7,   7,   7,   7,   7,   7,   7,   7 ### 2564 (8K)
+equb &10, &f1,   0, &20, &30,   8,   8,   8,   8,   8,   8,   8,   8,   8,   8,   7 ### 2532 (4K)
+equb &40, &e4,   1, &20, &60, &fb, &c0, &ff, &bf,   3, &fb,   0, &7f,   0,   0,   0 ### 27011 (128K)
+
+
+1=0001
+3=0011
+4=0100
+5=0101
+
+&00 -> Size
+
+&01 -> Misc A
+
+       bits 7..4 1111 = 24 pin              VCC on pin 26, VPP on pin
+                 1110 = 28 pin others       VCC pn pin 28, VPP on pin 1
+                 1100 = 28 pin 27512/27513  VCC on pin 28, VPP on pin 22
+
+
+                 25V 21V 12V
+       bit 3     0   0   0    -> 3K3
+       bit 2     0   0   1    -> 18K
+       bit 1     0   1   0    -> 3K3
+
+       bit 0     0 = 27256 or smaller
+                 1 = 27512/27513/27011
+
+&02 -> Speed (0=slow, 1=fast)
+&03 -> Buffer Start Page
+&04 -> Buffer End Page
+
+Only valid for 28 pin devices:
+
+&05 -> Misc B mask (used lots)
+&06 -> OR into Port B Addr Hi (used lots)
+&07 -> Misc B mask (used once)
+&08 -> OR into Port B Addr Hi (used once)
+&09 -> OR into Port B Addr Hi (used lots)
+&0A -> Misc B mask (used once)
+&0B -> OR into Misc B (used once)
+&0C -> Misc B mask (used lots)
+
+
+
+
+.Set_ROM_Page
+    lda #&3c ; '<'            # 0011 1100 (Why?)
+    sta PIA1_PortA_Addr_Lo
+    lda #&30 ; '0'
+    sta PIA2_ControlA         # Enable writing to Port A DDR
+    lda #&ff
+    sta PIA2_PortA_Data       # Port A DDR = output
+    lda #&34 ; '4'
+    sta PIA2_ControlA         # Disable writing to Port A DDR
+    lda l0402_miscb_shadow
+    and #&fe
+    jsr Set_MiscB             # MiscB.0 = 0 (U3 direction - output)
+    lda l0403
+    sta PIA2_PortA_Data       # Output Page number to EPROM databus
+    lda #&34 ; '4'
+    sta PIA1_PortA_Addr_Lo    # 0011 0100 (Why? Setting A3=0)
+    lda l0071                 # 0000 0000 (This has been set to zero)
+    and #&bf
+    sta PIA1_PortB_Addr_Hi    # xx0x xxxx A13=0
+    lda l0071
+    ora #&c0
+    sta PIA1_PortB_Addr_Hi    # 11xx xxxx A14=1 A15=1
+    lda #&3c ; '<'
+    sta PIA1_PortA_Addr_Lo    # 0011 1100 (Why? Setting A3=1)
+    lda l0402_miscb_shadow
+    ora #1
+    jsr Set_MiscB             # MiscB.0 = 1 (U3 direction - input)
+    lda #&30 ; '0'
+    sta PIA2_ControlA         # Enable writing to Port A DDR
+    lda #0
+    sta PIA2_PortA_Data       # Port A DDR = input
+    lda #&34 ; '4'
+    sta PIA2_ControlA         # Disable writing to Port A DDR
+    lda #&34 ; '4'
+    sta PIA1_PortA_Addr_Lo    # 0011 0100 (Why? Setting A3=0)
+    rts
