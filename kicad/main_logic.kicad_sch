@@ -4016,7 +4016,7 @@
     (property "Reference" "R4" (id 0) (at 154.94 95.2499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1K0" (id 1) (at 154.94 97.7899 0)
+    (property "Value" "3K3" (id 1) (at 154.94 97.7899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (id 2) (at 159.258 96.52 90)
