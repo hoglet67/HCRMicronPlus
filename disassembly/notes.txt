@@ -71,7 +71,7 @@ Only valid for 28 pin devices:
     sta PIA1_PortA_Addr_Lo    # 0011 0100 (Why? Setting A3=0)
     lda l0071                 # 0000 0000 (This has been set to zero)
     and #&bf
-    sta PIA1_PortB_Addr_Hi    # xx0x xxxx A13=0
+    sta PIA1_PortB_Addr_Hi    # x0xx xxxx A14=0
     lda l0071
     ora #&c0
     sta PIA1_PortB_Addr_Hi    # 11xx xxxx A14=1 A15=1
