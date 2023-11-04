@@ -608,6 +608,9 @@
     (path "/3997e718-39c9-481a-96ee-32c1e1e29a81/db96847b-5b07-405f-965c-de4b9e42fe26"
       (reference "#PWR0147") (unit 1) (value "VCC") (footprint "")
     )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/28dfe23a-65d6-4c32-b204-f5a2c519a11f"
+      (reference "#PWR0148") (unit 1) (value "GND") (footprint "")
+    )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/6001c8e6-56c1-4319-b2d7-4c754c2dac60"
       (reference "C1") (unit 1) (value "2200u/16V") (footprint "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm")
     )
@@ -698,8 +701,11 @@
     (path "/db3422d7-deb8-4d8a-a92c-354b1d76c19b/14ea4872-0eee-45dc-afe5-b6e5d00f6c8c"
       (reference "J1") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "custom_footprints:TransitionHeader_34_P2.54mm_Vertical")
     )
-    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/b5fc1bfd-61cc-4a00-b387-e42604c53f11"
-      (reference "J2") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/6c669084-e731-4cd6-931d-1fba894e2a08"
+      (reference "J2") (unit 1) (value "Conn_01x01_Female") (footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm")
+    )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/762f7c2e-e2b8-49ec-a570-488a72e03d6c"
+      (reference "J3") (unit 1) (value "Conn_01x01_Female") (footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/be6f2777-b332-4885-9ebe-49d92c98914f"
       (reference "Q1") (unit 1) (value "2N2905A") (footprint "Package_TO_SOT_THT:TO-39-3")
@@ -787,6 +793,12 @@
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/13731313-e6ef-4358-b712-21b6c7225097"
       (reference "T1") (unit 1) (value "Transformer_1P_2S") (footprint "custom_footprints:Transformer_drake_p0609")
+    )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/7f979e9d-a373-40a8-8046-03deec43faff"
+      (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm")
+    )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/b6e3aedf-9299-4a09-a8ba-b112ba2b905c"
+      (reference "TP2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm")
     )
     (path "/db3422d7-deb8-4d8a-a92c-354b1d76c19b/0cbadb74-936c-46ab-93a5-7b68177edefa"
       (reference "U1") (unit 1) (value "MC68A21") (footprint "Package_DIP:DIP-40_W15.24mm")
