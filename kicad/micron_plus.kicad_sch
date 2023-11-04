@@ -627,7 +627,7 @@
       (reference "C5") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/45b07460-182e-45c2-bbeb-137c6623e0fb"
-      (reference "C6") (unit 1) (value "10u/35V") (footprint "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm")
+      (reference "C6") (unit 1) (value "10u/35V") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/c2ed280b-7909-4218-b2ee-1f1c6b86e7be"
       (reference "C7") (unit 1) (value "100u/16V") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
@@ -642,7 +642,7 @@
       (reference "C10") (unit 1) (value "220u/63V") (footprint "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/61ace113-c5e6-4601-a318-650749f1867b"
-      (reference "C11") (unit 1) (value "4.7u/35V") (footprint "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm")
+      (reference "C11") (unit 1) (value "4.7u/35V") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/ce4b9544-be0c-4365-affe-5343bcc59aff"
       (reference "C12") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -708,10 +708,10 @@
       (reference "J3") (unit 1) (value "Conn_01x01_Female") (footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/be6f2777-b332-4885-9ebe-49d92c98914f"
-      (reference "Q1") (unit 1) (value "2N2905A") (footprint "Package_TO_SOT_THT:TO-39-3")
+      (reference "Q1") (unit 1) (value "2N2905A") (footprint "custom_footprints:TO-39-3")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/f9344920-22a7-4683-b312-1202067ec32d"
-      (reference "Q2") (unit 1) (value "2N2905A") (footprint "Package_TO_SOT_THT:TO-39-3")
+      (reference "Q2") (unit 1) (value "2N2905A") (footprint "custom_footprints:TO-39-3")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/843c194e-1a36-4fa8-8341-21ba9390eb92"
       (reference "Q3") (unit 1) (value "2N3904") (footprint "custom_footprints:TO-92_Wide")
@@ -783,13 +783,13 @@
       (reference "RL3") (unit 1) (value "MT2-C93401") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/306e92b1-904e-4dbf-abf8-2a999b55d763"
-      (reference "RV1") (unit 1) (value "1K0") (footprint "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical")
+      (reference "RV1") (unit 1) (value "1K0") (footprint "custom_footprints:Potentiometer_Bourns_3339P_Vertical_HandSoldering")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/c481b958-f434-409d-ae76-11aa1abb85b4"
-      (reference "RV2") (unit 1) (value "5K0") (footprint "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical")
+      (reference "RV2") (unit 1) (value "5K0") (footprint "custom_footprints:Potentiometer_Bourns_3339P_Vertical_HandSoldering")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/0fff2c56-bfbd-443a-b07c-8aa849a38a7f"
-      (reference "RV3") (unit 1) (value "1K0") (footprint "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical")
+      (reference "RV3") (unit 1) (value "1K0") (footprint "custom_footprints:Potentiometer_Bourns_3339P_Vertical_HandSoldering")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/13731313-e6ef-4358-b712-21b6c7225097"
       (reference "T1") (unit 1) (value "Transformer_1P_2S") (footprint "custom_footprints:Transformer_drake_p0609")
