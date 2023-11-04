@@ -384,6 +384,12 @@
         "microvia_drill": 0.508,
         "name": "Power",
         "nets": [
+          "/Main Logic and Eprom Socket/EpromVCC",
+          "/Power Supply/10VDC",
+          "/Power Supply/28VDC",
+          "/Power Supply/AC1",
+          "/Power Supply/AC2",
+          "/Power Supply/AC4",
           "GND",
           "VCC"
         ],

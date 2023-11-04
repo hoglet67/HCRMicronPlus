@@ -608,8 +608,8 @@
     (path "/3997e718-39c9-481a-96ee-32c1e1e29a81/db96847b-5b07-405f-965c-de4b9e42fe26"
       (reference "#PWR0147") (unit 1) (value "VCC") (footprint "")
     )
-    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/28dfe23a-65d6-4c32-b204-f5a2c519a11f"
-      (reference "#PWR0148") (unit 1) (value "GND") (footprint "")
+    (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/c745746e-8c6d-49dc-b62a-8573253292dd"
+      (reference "#PWR0149") (unit 1) (value "VCC") (footprint "")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/6001c8e6-56c1-4319-b2d7-4c754c2dac60"
       (reference "C1") (unit 1) (value "2200u/16V") (footprint "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm")
@@ -772,6 +772,9 @@
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/d35d576e-7c86-4cdb-aa06-639a8f4ff835"
       (reference "R18") (unit 1) (value "1K0") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P11.43mm_Horizontal")
+    )
+    (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/7b4f5d1d-d206-44f7-82c3-e0612a7cd38f"
+      (reference "R19") (unit 1) (value "4K7") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P11.43mm_Horizontal")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/52423a32-8101-41aa-9abe-fccfbaeff464"
       (reference "RL1") (unit 1) (value "MT2-C93401") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
