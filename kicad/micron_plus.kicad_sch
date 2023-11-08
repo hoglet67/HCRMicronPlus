@@ -699,7 +699,7 @@
       (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
     )
     (path "/db3422d7-deb8-4d8a-a92c-354b1d76c19b/14ea4872-0eee-45dc-afe5-b6e5d00f6c8c"
-      (reference "J1") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "custom_footprints:TransitionHeader_34_P2.54mm_Vertical")
+      (reference "J1") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/6c669084-e731-4cd6-931d-1fba894e2a08"
       (reference "J2") (unit 1) (value "Conn_01x01_Female") (footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm")

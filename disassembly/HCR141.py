@@ -102,6 +102,13 @@ hook_subroutine(0x8359, "print_string", stringz_hook)
 
 label(0xbf2d, "jmp_PrintHexA");
 label(0x8deb, "PrintHexA");
+label(0x9fd3, "PrintHexAddress");
+
+# These contain identical code
+label(0x9fb5, "Calculate_Pulse_WidthA");
+label(0xa2f2, "Calculate_Pulse_WidthB");
+label(0xa5f8, "Calculate_Pulse_WidthC");
+label(0xa766, "Calculate_Pulse_WidthD");
 
 label(0xbf30, "jmp_Failed")
 label(0x9f26, "Failed")

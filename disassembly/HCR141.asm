@@ -2861,7 +2861,7 @@ oscli               = &fff7
     lda #&a0
     sta user_via_ier
 .c9c95
-    jsr sub_c9fd3
+    jsr PrintHexAddress
     jsr jmp_print_string
     equs 8, 8, 8, 8, 0
 
@@ -2895,7 +2895,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and l0507
     jsr jmp_Set_MiscB
-    jsr sub_c9fb5
+    jsr Calculate_Pulse_Width1
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3076,7 +3076,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and #&fb
     jsr jmp_Set_MiscB
-    jsr sub_c9fb5
+    jsr Calculate_Pulse_Width1
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3189,7 +3189,7 @@ oscli               = &fff7
     jsr jmp_print_string
     equs &1f, 4, &0c, &88, &81, "FAILED AT ROM LOCATION ", 0
 
-    jsr sub_c9fd3
+    jsr PrintHexAddress
     ldy #0
     ldx #3
     lda #osbyte_read_write_bell_duration
@@ -3239,7 +3239,7 @@ oscli               = &fff7
     jsr osbyte                                                        ; Wait for a key press within 15 centiseconds
     rts
 
-.sub_c9fb5
+.Calculate_Pulse_Width1
     ldx l0079
     cpx #1
     bne c9fbc
@@ -3261,7 +3261,7 @@ oscli               = &fff7
     bne loop_c9fc2
     rts
 
-.sub_c9fd3
+.PrintHexAddress
     lda l0071
     jsr jmp_PrintHexA
     lda l0070
@@ -3379,7 +3379,7 @@ oscli               = &fff7
 .ca195
     jsr sub_ca976
 .ca198
-    jsr sub_c9fd3
+    jsr PrintHexAddress
     jsr jmp_print_string
     equs 8, 8, 8, 8, 0
 
@@ -3416,7 +3416,7 @@ oscli               = &fff7
     and #&bf
     sta PIA1_PortB_Addr_Hi
 .ca1e6
-    jsr sub_ca2f2
+    jsr Calculate_Pulse_Width2
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3546,7 +3546,7 @@ oscli               = &fff7
 
     equb &60
 
-.sub_ca2f2
+.Calculate_Pulse_Width2
     ldx l0079
     cpx #1
     bne ca2f9
@@ -3666,7 +3666,7 @@ oscli               = &fff7
     lda l0501
     jsr jmp_Set_MiscA
 .ca4e7
-    jsr sub_c9fd3
+    jsr PrintHexAddress
     jsr jmp_print_string
     equs 8, 8, 8, 8, 0
 
@@ -3697,7 +3697,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and #&fb
     jsr jmp_Set_MiscB
-    jsr sub_ca5f8
+    jsr Calculate_Pulse_Width3
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3799,7 +3799,7 @@ oscli               = &fff7
 
     equb &60
 
-.sub_ca5f8
+.Calculate_Pulse_Width3
     ldx l0079
     cpx #1
     bne ca5ff
@@ -3882,7 +3882,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and #&fb
     jsr jmp_Set_MiscB
-    jsr sub_ca766
+    jsr Calculate_Pulse_Width4
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3988,7 +3988,7 @@ la6b1 = sub_ca6af+2
 
     equb &60
 
-.sub_ca766
+.Calculate_Pulse_Width4
     ldx l0079
     cpx #1
     bne ca76d
@@ -4117,7 +4117,7 @@ la6b1 = sub_ca6af+2
     lda #&a0
     sta user_via_ier
 .ca892
-    jsr sub_c9fd3
+    jsr PrintHexAddress
     jsr jmp_print_string
     equs 8, 8, 8, 8, 0
 
@@ -5666,13 +5666,8 @@ la6b1 = sub_ca6af+2
 ;     sub_c8e06
 ;     sub_c93e9
 ;     sub_c9fab
-;     sub_c9fb5
-;     sub_c9fd3
-;     sub_ca2f2
 ;     sub_ca5b0
-;     sub_ca5f8
 ;     sub_ca6af
-;     sub_ca766
 ;     sub_ca78f
 ;     sub_ca976
 ;     sub_cb007
