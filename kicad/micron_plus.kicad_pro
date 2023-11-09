@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 1.27
         }
       },
       "diff_pair_dimensions": [
@@ -385,11 +385,8 @@
         "name": "Power",
         "nets": [
           "/Main Logic and Eprom Socket/EpromVCC",
-          "/Power Supply/10VDC",
           "/Power Supply/28VDC",
-          "/Power Supply/AC1",
-          "/Power Supply/AC2",
-          "/Power Supply/AC4",
+          "/Power Supply/9VDC",
           "GND",
           "VCC"
         ],
