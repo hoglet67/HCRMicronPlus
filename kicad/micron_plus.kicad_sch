@@ -819,13 +819,13 @@
       (reference "RL3") (unit 1) (value "MT2-C93401") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/306e92b1-904e-4dbf-abf8-2a999b55d763"
-      (reference "RV1") (unit 1) (value "1K0") (footprint "custom_footprints:Potentiometer_Bourns_3339P_Vertical_HandSoldering")
+      (reference "RV1") (unit 1) (value "1K0") (footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/c481b958-f434-409d-ae76-11aa1abb85b4"
-      (reference "RV2") (unit 1) (value "5K0") (footprint "custom_footprints:Potentiometer_Bourns_3339P_Vertical_HandSoldering")
+      (reference "RV2") (unit 1) (value "5K0") (footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/0fff2c56-bfbd-443a-b07c-8aa849a38a7f"
-      (reference "RV3") (unit 1) (value "1K0") (footprint "custom_footprints:Potentiometer_Bourns_3339P_Vertical_HandSoldering")
+      (reference "RV3") (unit 1) (value "1K0") (footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical")
     )
     (path "/db3422d7-deb8-4d8a-a92c-354b1d76c19b/0cbadb74-936c-46ab-93a5-7b68177edefa"
       (reference "U1") (unit 1) (value "MC68A21") (footprint "Package_DIP:DIP-40_W15.24mm")
