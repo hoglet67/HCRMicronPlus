@@ -648,7 +648,7 @@
       (reference "C11") (unit 1) (value "100u/50V") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/9b97f95f-9656-41bb-8295-732abb5ea2f1"
-      (reference "C12") (unit 1) (value "470p") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
+      (reference "C12") (unit 1) (value "390p") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/3b2cf607-9ef9-4e47-8c5f-24639f40383b"
       (reference "C13") (unit 1) (value "100u/50V") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
@@ -789,10 +789,10 @@
       (reference "R21") (unit 1) (value "180") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/c0686243-1761-4b1d-9e0d-aaf3bbbab43f"
-      (reference "R22") (unit 1) (value "12K") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
+      (reference "R22") (unit 1) (value "47K") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/ac68716d-622a-4bcb-8339-f1ea915c828c"
-      (reference "R23") (unit 1) (value "560") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
+      (reference "R23") (unit 1) (value "2K2") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/26f80f47-eeac-4f05-9e55-ebd4a1e9c9ca"
       (reference "R24") (unit 1) (value "5K6") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
