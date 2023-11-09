@@ -3,3 +3,15 @@
 (constraint courtyard_clearance (min -1mm))
 (condition "A.Reference=='T1'")
 )
+(rule "HEATSINK1 EXCEPTION"
+(constraint courtyard_clearance (min -1mm))
+(condition "A.Reference=='HS1'")
+)
+(rule "HEATSINK2 EXCEPTION"
+(constraint courtyard_clearance (min -1mm))
+(condition "A.Reference=='HS2'")
+)
+(rule "HEATSINK3 EXCEPTION"
+(constraint courtyard_clearance (min -1mm))
+(condition "A.Reference=='HS3'")
+)

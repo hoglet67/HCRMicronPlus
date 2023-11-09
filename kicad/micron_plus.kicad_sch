@@ -614,6 +614,9 @@
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/c745746e-8c6d-49dc-b62a-8573253292dd"
       (reference "#PWR0149") (unit 1) (value "VCC") (footprint "")
     )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/3e2888c7-4428-42b6-b439-bcf43b3fea99"
+      (reference "#PWR0150") (unit 1) (value "GND") (footprint "")
+    )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/a8ef7545-82cd-4d3c-ad82-4bcc22cb0bb5"
       (reference "C1") (unit 1) (value "330n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
@@ -703,6 +706,15 @@
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/fddfc04c-abdf-4fc7-9368-1440e94e0411"
       (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
+    )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/fee570d1-7f28-4e08-be2a-cc4ff7dec268"
+      (reference "HS1") (unit 1) (value "Multicomp Pro MC33263") (footprint "custom_footprints:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm")
+    )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/8917c936-cdf2-4e74-86db-e8d566ac7abf"
+      (reference "HS2") (unit 1) (value "Clip On Heatsink") (footprint "custom_footprints:Heatsink_Boyd_PF720")
+    )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/ce6146e3-5734-4b4f-8ff1-bd5bc9bdc5f1"
+      (reference "HS3") (unit 1) (value "Clip On Heatsink") (footprint "custom_footprints:Heatsink_Boyd_PF720")
     )
     (path "/db3422d7-deb8-4d8a-a92c-354b1d76c19b/14ea4872-0eee-45dc-afe5-b6e5d00f6c8c"
       (reference "J1") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical")
