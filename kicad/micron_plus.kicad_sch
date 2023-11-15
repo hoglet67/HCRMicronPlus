@@ -621,7 +621,7 @@
       (reference "C1") (unit 1) (value "330n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/2bf2ba90-a2d3-4371-a6ef-62af0ea326d8"
-      (reference "C2") (unit 1) (value "220u/16V") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
+      (reference "C2") (unit 1) (value "220u") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/70df42d3-b2f8-4bec-b478-4a88de662c01"
       (reference "C3") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -639,28 +639,28 @@
       (reference "C7") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/45b07460-182e-45c2-bbeb-137c6623e0fb"
-      (reference "C8") (unit 1) (value "10u/35V") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
+      (reference "C8") (unit 1) (value "10u") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/c2ed280b-7909-4218-b2ee-1f1c6b86e7be"
-      (reference "C9") (unit 1) (value "100u/16V") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+      (reference "C9") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/fc38ed13-6ce9-4c21-9c4b-3157fd3494d7"
       (reference "C10") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/aca56318-8dfa-446c-8b29-432666fad473"
-      (reference "C11") (unit 1) (value "100u/50V") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
+      (reference "C11") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/9b97f95f-9656-41bb-8295-732abb5ea2f1"
       (reference "C12") (unit 1) (value "390p") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/3b2cf607-9ef9-4e47-8c5f-24639f40383b"
-      (reference "C13") (unit 1) (value "100u/50V") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
+      (reference "C13") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/1024a2fd-f526-4711-b575-6b0941237dcd"
       (reference "C14") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/61ace113-c5e6-4601-a318-650749f1867b"
-      (reference "C15") (unit 1) (value "4.7u/35V") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
+      (reference "C15") (unit 1) (value "4u7") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/ce4b9544-be0c-4365-affe-5343bcc59aff"
       (reference "C16") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -951,13 +951,13 @@
       (reference "U17") (unit 1) (value "28 PIN ZIF") (footprint "Package_DIP:DIP-28_W15.24mm_Socket")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/06b1fdbc-22fd-4b78-ae41-e141039e7906"
-      (reference "U18") (unit 1) (value "LM7805_TO220") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+      (reference "U18") (unit 1) (value "LM7805") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/1028567b-e7be-41de-aa18-30638294f7dc"
-      (reference "U19") (unit 1) (value "LM317SP_TO220") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+      (reference "U19") (unit 1) (value "LM317T") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/490f7dd0-6f48-4907-b06e-64b2e00f9b64"
-      (reference "U20") (unit 1) (value "LM317SP_TO220") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+      (reference "U20") (unit 1) (value "LM317T") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
   )
 )
