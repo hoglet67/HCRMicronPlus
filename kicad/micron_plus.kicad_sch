@@ -723,7 +723,7 @@
       (reference "J2") (unit 1) (value "Cliff DC10A") (footprint "custom_footprints:CLIFF_FC68148(DC-10A)")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/f0c5d66e-43ee-49d2-a375-c7ab2ea972bf"
-      (reference "L1") (unit 1) (value "220uH") (footprint "Inductor_THT:L_Radial_D14.2mm_P10.00mm_Neosid_SD14")
+      (reference "L1") (unit 1) (value "220uH") (footprint "custom_footprints:L_Radial_D14.2mm_P10.00mm_Kemet")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/be6f2777-b332-4885-9ebe-49d92c98914f"
       (reference "Q1") (unit 1) (value "2N2905A") (footprint "custom_footprints:TO-39-3")

@@ -4051,7 +4051,7 @@
     (property "Value" "220uH" (id 1) (at 96.52 25.4 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Inductor_THT:L_Radial_D14.2mm_P10.00mm_Neosid_SD14" (id 2) (at 92.71 29.21 0)
+    (property "Footprint" "custom_footprints:L_Radial_D14.2mm_P10.00mm_Kemet" (id 2) (at 92.71 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 92.71 29.21 0)
