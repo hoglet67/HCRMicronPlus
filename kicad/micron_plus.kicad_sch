@@ -735,7 +735,7 @@
       (reference "R3") (unit 1) (value "2K2") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/c22f9ca2-0ac5-490e-bd6b-a1ec24122323"
-      (reference "R4") (unit 1) (value "3K3") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R4") (unit 1) (value "3K3 1W") (footprint "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/0bd82532-c11f-4748-8c60-a1ed675bef35"
       (reference "R5") (unit 1) (value "1K0") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
@@ -795,7 +795,7 @@
       (reference "R23") (unit 1) (value "2K2") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/26f80f47-eeac-4f05-9e55-ebd4a1e9c9ca"
-      (reference "R24") (unit 1) (value "5K6") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R24") (unit 1) (value "3K3 1W") (footprint "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/52423a32-8101-41aa-9abe-fccfbaeff464"
       (reference "RL1") (unit 1) (value "MT2-C93401") (footprint "Relay_THT:Relay_DPDT_Omron_G5V-2")
