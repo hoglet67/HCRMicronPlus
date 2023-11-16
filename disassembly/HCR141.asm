@@ -2895,7 +2895,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and l0507
     jsr jmp_Set_MiscB
-    jsr Calculate_Pulse_Width1
+    jsr Calculate_Pulse_WidthA
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3076,7 +3076,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and #&fb
     jsr jmp_Set_MiscB
-    jsr Calculate_Pulse_Width1
+    jsr Calculate_Pulse_WidthA
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3239,7 +3239,7 @@ oscli               = &fff7
     jsr osbyte                                                        ; Wait for a key press within 15 centiseconds
     rts
 
-.Calculate_Pulse_Width1
+.Calculate_Pulse_WidthA
     ldx l0079
     cpx #1
     bne c9fbc
@@ -3416,7 +3416,7 @@ oscli               = &fff7
     and #&bf
     sta PIA1_PortB_Addr_Hi
 .ca1e6
-    jsr Calculate_Pulse_Width2
+    jsr Calculate_Pulse_WidthB
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3546,7 +3546,7 @@ oscli               = &fff7
 
     equb &60
 
-.Calculate_Pulse_Width2
+.Calculate_Pulse_WidthB
     ldx l0079
     cpx #1
     bne ca2f9
@@ -3697,7 +3697,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and #&fb
     jsr jmp_Set_MiscB
-    jsr Calculate_Pulse_Width3
+    jsr Calculate_Pulse_WidthC
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3799,7 +3799,7 @@ oscli               = &fff7
 
     equb &60
 
-.Calculate_Pulse_Width3
+.Calculate_Pulse_WidthC
     ldx l0079
     cpx #1
     bne ca5ff
@@ -3882,7 +3882,7 @@ oscli               = &fff7
     lda l0402_miscb_shadow
     and #&fb
     jsr jmp_Set_MiscB
-    jsr Calculate_Pulse_Width4
+    jsr Calculate_Pulse_WidthD
     lda l0077
     sta user_via_t2c_l
     lda l0076
@@ -3988,7 +3988,7 @@ la6b1 = sub_ca6af+2
 
     equb &60
 
-.Calculate_Pulse_Width4
+.Calculate_Pulse_WidthD
     ldx l0079
     cpx #1
     bne ca76d
