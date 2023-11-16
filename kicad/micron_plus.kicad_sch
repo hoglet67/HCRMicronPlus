@@ -936,7 +936,7 @@
       (reference "U16") (unit 1) (value "MC34063AP") (footprint "custom_footprints:DIP-8_W7.62mm_Socket")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/513d4150-ebaf-427e-8374-abdf1c1b567a"
-      (reference "U17") (unit 1) (value "28 PIN ZIF") (footprint "Package_DIP:DIP-28_W15.24mm_Socket")
+      (reference "U17") (unit 1) (value "28 PIN ZIF") (footprint "custom_footprints:DIP-28_W15.24mm_Socket_LongPads")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/06b1fdbc-22fd-4b78-ae41-e141039e7906"
       (reference "U18") (unit 1) (value "LM7805") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")

@@ -3660,7 +3660,7 @@
     (property "Value" "28 PIN ZIF" (id 1) (at 208.28 36.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket" (id 2) (at 222.25 64.77 0)
+    (property "Footprint" "custom_footprints:DIP-28_W15.24mm_Socket_LongPads" (id 2) (at 222.25 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://datasheet.octopart.com/D27256-2-Intel-datasheet-17852618.pdf" (id 3) (at 222.25 64.77 0)
