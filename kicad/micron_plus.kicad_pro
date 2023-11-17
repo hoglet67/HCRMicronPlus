@@ -385,8 +385,11 @@
         "name": "Power",
         "nets": [
           "/Main Logic and Eprom Socket/EpromVCC",
+          "/Main Logic and Eprom Socket/EpromVPP",
           "/Power Supply/28VDC",
           "/Power Supply/9VDC",
+          "/Power Supply/EpromVCCUnswitched",
+          "/Power Supply/EpromVPPUnswitched",
           "GND",
           "VCC"
         ],

@@ -780,7 +780,7 @@
       (reference "R18") (unit 1) (value "1K0") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P11.43mm_Horizontal")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/7b4f5d1d-d206-44f7-82c3-e0612a7cd38f"
-      (reference "R19") (unit 1) (value "4K7") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P11.43mm_Horizontal")
+      (reference "R19") (unit 1) (value "4K7") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/5406abe4-afe6-4f22-8e3d-894cc56ed7e1"
       (reference "R20") (unit 1) (value "0R33") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
@@ -822,13 +822,13 @@
       (reference "U2") (unit 1) (value "MC68A21") (footprint "custom_footprints:DIP-40_W15.24mm_Socket")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/55339980-fe3d-42b0-83d6-b364d3fe166b"
-      (reference "U3") (unit 1) (value "74LS245") (footprint "custom_footprints:DIP-20_W7.62mm_Socket")
+      (reference "U3") (unit 1) (value "74LS245") (footprint "custom_footprints:DIP-20_W7.62mm_Socket_tweaked")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/a0979d43-417c-41ad-81c8-d7784dbd009d"
-      (reference "U4") (unit 1) (value "74LS244") (footprint "custom_footprints:DIP-20_W7.62mm_Socket")
+      (reference "U4") (unit 1) (value "74LS244") (footprint "custom_footprints:DIP-20_W7.62mm_Socket_tweaked")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/43c1da86-019c-45e8-ad1d-947376f4bd37"
-      (reference "U5") (unit 1) (value "74LS244") (footprint "custom_footprints:DIP-20_W7.62mm_Socket")
+      (reference "U5") (unit 1) (value "74LS244") (footprint "custom_footprints:DIP-20_W7.62mm_Socket_tweaked")
     )
     (path "/f9a739c5-9b12-47e1-af6a-d12a836d0aef/a93c6caa-6edb-4a93-8bab-66922b24765a"
       (reference "U6") (unit 1) (value "74LS374") (footprint "custom_footprints:DIP-20_W7.62mm_Socket")
@@ -936,7 +936,7 @@
       (reference "U16") (unit 1) (value "MC34063AP") (footprint "custom_footprints:DIP-8_W7.62mm_Socket")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/513d4150-ebaf-427e-8374-abdf1c1b567a"
-      (reference "U17") (unit 1) (value "28 PIN ZIF") (footprint "custom_footprints:DIP-28_W15.24mm_Socket_LongPads")
+      (reference "U17") (unit 1) (value "28 PIN ZIF") (footprint "custom_footprints:DIP_Socket-28_W11.9_W12.7_W15.24_W17.78_W18.5_3M_228-1277-00-0602J")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/06b1fdbc-22fd-4b78-ae41-e141039e7906"
       (reference "U18") (unit 1) (value "LM7805") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
