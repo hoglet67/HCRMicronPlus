@@ -650,20 +650,23 @@
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/aca56318-8dfa-446c-8b29-432666fad473"
       (reference "C11") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
+    (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/5984000c-f1de-448f-abfb-f3b588edd1eb"
+      (reference "C12") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
+    )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/9b97f95f-9656-41bb-8295-732abb5ea2f1"
-      (reference "C12") (unit 1) (value "390p") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
+      (reference "C13") (unit 1) (value "390p") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/3b2cf607-9ef9-4e47-8c5f-24639f40383b"
-      (reference "C13") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
+      (reference "C14") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/1024a2fd-f526-4711-b575-6b0941237dcd"
-      (reference "C14") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
+      (reference "C15") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/61ace113-c5e6-4601-a318-650749f1867b"
-      (reference "C15") (unit 1) (value "4u7") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
+      (reference "C16") (unit 1) (value "4u7") (footprint "custom_footprints:CP_Radial_Tantal_D4.5mm_P5.00mm")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/ce4b9544-be0c-4365-affe-5343bcc59aff"
-      (reference "C16") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
+      (reference "C17") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f5a55f0f-03d6-4712-bbcb-2c9afb4bd548/ed0b4aaa-f77a-435d-9569-2a611d221468"
       (reference "D1") (unit 1) (value "1N4148") (footprint "custom_footprints:D_DO-35_SOD27_P11.43mm_Horizontal")
