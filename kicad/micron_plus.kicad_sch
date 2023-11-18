@@ -702,7 +702,7 @@
       (reference "HS3") (unit 1) (value "Clip On Heatsink") (footprint "custom_footprints:Heatsink_Boyd_PF720")
     )
     (path "/db3422d7-deb8-4d8a-a92c-354b1d76c19b/14ea4872-0eee-45dc-afe5-b6e5d00f6c8c"
-      (reference "J1") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical")
+      (reference "J1") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/b3c4b488-0e64-43ee-a344-06bf0abe049e"
       (reference "J2") (unit 1) (value "Cliff DC10A") (footprint "custom_footprints:CLIFF_FC68148(DC-10A)")
