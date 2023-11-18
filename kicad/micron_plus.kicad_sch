@@ -786,7 +786,7 @@
       (reference "R19") (unit 1) (value "4K7") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/5406abe4-afe6-4f22-8e3d-894cc56ed7e1"
-      (reference "R20") (unit 1) (value "0R33") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")
+      (reference "R20") (unit 1) (value "0R33") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/629525a2-39ec-435b-b203-09c9da7daaa1"
       (reference "R21") (unit 1) (value "180R") (footprint "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal")

@@ -3236,7 +3236,7 @@
     (uuid 5406abe4-afe6-4f22-8e3d-894cc56ed7e1)
     (property "Reference" "R20" (id 0) (at 69.85 22.86 90))
     (property "Value" "0R33" (id 1) (at 69.85 25.4 90))
-    (property "Footprint" "custom_footprints:R_Axial_DIN0207_L6.3mm_D2.0mm_P10.16mm_Horizontal" (id 2) (at 69.85 30.988 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 69.85 30.988 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 69.85 29.21 0)
