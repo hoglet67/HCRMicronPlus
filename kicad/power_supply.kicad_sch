@@ -1423,7 +1423,6 @@
     )
   )
 
-
   (junction (at 166.37 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 01d996e4-69b0-4526-b4df-dd021b3a709d)
   )
@@ -2545,7 +2544,7 @@
     (uuid ffb92df7-ecd8-4cb3-913e-459674381755)
   )
 
-  (text "Right Trimmer:\nAdjusts 25V VPP" (at 160.02 74.93 180)
+  (text "Left Trimmer:\nAdjusts 25V VPP" (at 160.02 74.93 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 352da3a1-7510-40eb-9e6b-f7a0572d1219)
   )
@@ -2581,7 +2580,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b8a99d7a-c3e0-418f-9700-a3d70d436e32)
   )
-  (text "Left Trimmer:\nAdjusts 12.5V VPP" (at 156.21 39.37 180)
+  (text "Right Trimmer:\nAdjusts 12.5V VPP" (at 156.21 39.37 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d0216131-861e-48c0-9b1f-e1787e87edb5)
   )
