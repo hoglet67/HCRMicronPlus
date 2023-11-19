@@ -681,16 +681,16 @@
       (reference "D4") (unit 1) (value "1N5819") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/2b740d92-7307-43b2-bdb5-be78d38e4f83"
-      (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
+      (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/be6063aa-22b4-47cf-a507-a0d1d68302b4"
-      (reference "H2") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
+      (reference "H2") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/771d89bd-f98a-4908-878e-a48451c15a75"
-      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
+      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/fddfc04c-abdf-4fc7-9368-1440e94e0411"
-      (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
+      (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
     (path "/f9d5b6cb-300a-4451-93f6-d466a935f678/fee570d1-7f28-4e08-be2a-cc4ff7dec268"
       (reference "HS1") (unit 1) (value "Multicomp Pro MC33263") (footprint "custom_footprints:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm")
