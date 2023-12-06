@@ -11,6 +11,6 @@ beebasm -i firmware/hcr.asm -v -o ${BIN} > ${LOG}
 
 rm -f ${SSD}
 beeb blank_ssd ${SSD}
-beeb title ${SSD} "HCR Micron+"
+beeb title ${SSD} "HCR EPROM"
 beeb putfile ${SSD} ${BIN}
 beeb info ${SSD}
