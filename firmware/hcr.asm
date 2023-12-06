@@ -130,7 +130,7 @@ oscli               = &fff7
     jmp c804e
 
     equb &c2, &2a,   3
-    equs "MICRON PLUS EPROM PROGRAMMER 1.41"
+    equs "MICRON PLUS EPROM PROGRAMMER 1.42"
     equb 0
     equs "(C)H.C.R. ELECTRONIC SERVICES 1987"
     equb 0
@@ -4046,7 +4046,7 @@ la6b1 = sub_ca6af+2
     jsr jmp_print_string
     equs &1f, 4, &0c, "PROGRAMMING ROM LOCATION ", 0
 
-    jsr jmp_Reset_Hardware
+    jsr jmp_Reset_Hardware ; Latch: A = F9 B = FF ; VCC and VPP off
     lda #&30 ; '0'
     sta PIA2_ControlA
     lda #&ff
@@ -4055,50 +4055,52 @@ la6b1 = sub_ca6af+2
     sta PIA2_ControlA
     lda l0402_miscb_shadow
     and #&7e ; '~'
-    jsr jmp_Set_MiscB
-    lda l0501
-    jsr jmp_Set_MiscA
+    jsr jmp_Set_MiscB      ; Latch: B &= 7E ; VPP On and DDR write
+    lda l0501              ; L0501 holds users VPP choice (F1=25V,F3=21V;F5=12.5V)
+    jsr jmp_Set_MiscA      ; Latch: A = Fx ; Set VPP regulator (disabled on EPROM due to VCC interlock)
     lda l0400_device_type
-    cmp #5
+    cmp #5                 ; 5=2732
     bne ca826
-    lda l0401_misca_shadow
+
+    lda l0401_misca_shadow ; 2732 only...
     and #&9f
-    jsr jmp_Set_MiscA
+    jsr jmp_Set_MiscA      ; Latch: B &= 9F ; Set relays so VCC->26(24) and VPP->22(20)
     jmp ca860
 
 .ca826
-    cmp #6
+    cmp #6                 ; 6=2716
     beq ca850
-    cmp #9
+    cmp #9                 ; 9=???? doesn't look like this can happen
     beq ca850
-    cmp #7
+    cmp #7                 ; 7=2564
     bne ca845
-    lda l0402_miscb_shadow
+
+    lda l0402_miscb_shadow ; 2564 only...
     and #&f7
-    jsr jmp_Set_MiscB
+    jsr jmp_Set_MiscB      ; Latch: B &= F7 ; Set 2564 mode flag
     lda l0401_misca_shadow
     and #&bf
-    jsr jmp_Set_MiscA
+    jsr jmp_Set_MiscA      ; Latch: A &= BF ; Set relays so VCC->26(24); VPP defaults to 1
     jmp ca860
 
 .ca845
-    lda l0401_misca_shadow
+    lda l0401_misca_shadow ; 2532 only...
     and #&3f ; '?'
-    jsr jmp_Set_MiscA
+    jsr jmp_Set_MiscA      ; Latch: A &= 3F ; Set relays so VCC->26(24) and VPP->23(21)
     jmp ca860
 
 .ca850
-    lda l0401_misca_shadow
+    lda l0401_misca_shadow ; 2716 only...
     and #&3f ; '?'
-    jsr jmp_Set_MiscA
+    jsr jmp_Set_MiscA      ; Latch: A &= 3F ; Set relays so VCC->26(24) and VPP->23(21)
     lda l0402_miscb_shadow
     and #&fb
-    jsr jmp_Set_MiscB
+    jsr jmp_Set_MiscB      ; Latch: B &= FB ; Eprom 20(18) nCE/PGM low
 .ca860
-    jsr sub_ca976
+    jsr sub_ca976          ; wait 2 second for relays to stablize
     lda l0401_misca_shadow
     and #&fe
-    jsr jmp_Set_MiscA
+    jsr jmp_Set_MiscA      ; Latch: A &= FE ; VCC on, and release VPP interlock
     lda #&34 ; '4'
     sta PIA1_ControlA
     lda #0
