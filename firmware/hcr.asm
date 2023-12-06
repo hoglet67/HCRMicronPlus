@@ -4054,10 +4054,8 @@ la6b1 = sub_ca6af+2
     lda #&34 ; '4'
     sta PIA2_ControlA
     lda l0402_miscb_shadow
-    and #&7e ; '~'
-    jsr jmp_Set_MiscB      ; Latch: B &= 7E ; VPP On and DDR write
-    lda l0501              ; L0501 holds users VPP choice (F1=25V,F3=21V;F5=12.5V)
-    jsr jmp_Set_MiscA      ; Latch: A = Fx ; Set VPP regulator (disabled on EPROM due to VCC interlock)
+    and #&fe
+    jsr jmp_Set_MiscB      ; Latch: B &= FE ; DDR write
     lda l0400_device_type
     cmp #5                 ; 5=2732
     bne ca826
@@ -4097,10 +4095,39 @@ la6b1 = sub_ca6af+2
     and #&fb
     jsr jmp_Set_MiscB      ; Latch: B &= FB ; Eprom 20(18) nCE/PGM low
 .ca860
-    jsr sub_ca976          ; wait 2 second for relays to stablize
+    lda #3
+    jsr sub_delay_Ax160ms  ; Wait ~500ms for relays to stablize
+
+    ; Carefully sequence VCC and VPP as original code allowed VPP to rise a tad before VCC
+    ; and this might have been responsible for killing a TMS2532A EPROM
+
     lda l0401_misca_shadow
-    and #&fe
-    jsr jmp_Set_MiscA      ; Latch: A &= FE ; VCC on, and release VPP interlock
+    and #&fe               ; Bit 0 = 0 connects VCC to the Eprom PIN
+    ora #&08               ; Bit 3 = 1 clamps VPP regulator to 5V (this should already be the case)
+    jsr jmp_Set_MiscA
+    lda #1
+    jsr sub_delay_Ax160ms  ; Wait 160ms for VCC to stablize
+
+    ; At this point: VCC pin on, VPP pin off, VPP regulator clamped to 5V
+
+    lda l0402_miscb_shadow
+    and #&7f               ; Bit 7 = 0 connects VPP to the Eprom PIN
+    jsr jmp_Set_MiscB      ; Latch: B &= 7E ; VPP on
+    lda #1
+    jsr sub_delay_Ax160ms  ; Wait 160ms for VPP to stablize at 5V
+
+    ; At this point: VCC pin on, VPP pin on, VPP regulator clamped to 5V
+
+    lda l0501              ; L0501 holds users VPP choice (F1=25V,F3=21V;F5=12.5V)
+    and #&06               ; extract just bits 1 (21V) and 2 (12.5V)
+    ora l0401_misca_shadow ; OR back in current relay settings
+    and #&f7
+    jsr jmp_Set_MiscA      ; Latch: A |= 00/02/04
+    lda #1
+    jsr sub_delay_Ax160ms  ; Wait 160ms for VPP to stablize at 12.5/21/25V (takes ~60ms)
+
+    ; At this point: VCC pin on, VPP pin on, VPP regulator stable at 12.5/21/25V
+
     lda #&34 ; '4'
     sta PIA1_ControlA
     lda #0
@@ -4236,6 +4263,7 @@ la6b1 = sub_ca6af+2
 
 .sub_ca976
     lda #7
+.sub_delay_Ax160ms
     sta l0070
     ldx #0
     ldy #0
