@@ -1,5 +1,8 @@
+*~
+#*
 not_in_git/
 kicad/*.bak
 kicad/micron_plus-backups/
 kicad/fp-info-cache
 disassembly/HCR141.bin
+build/
