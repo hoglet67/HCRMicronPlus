@@ -2844,6 +2844,8 @@ oscli               = &fff7
     lda l0401_misca_shadow
     and #&fe
     jsr jmp_Set_MiscA
+    lda #1
+    jsr sub_delay_Ax160ms     ; wait 160ms for VPP to stablise
     lda #0
     sta l0070
     sta l0071
